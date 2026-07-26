@@ -63,14 +63,8 @@ repopick 491863 # sepolicy: Update ignored sepolicy for CP2A
 # device/qcom/sepolicy-legacy-um
 repopickchain 491886 # sepolicy: Add sepolicy rules for PowerState HAL
 
-# device/sony/pdx257
-repopickchain 493311 # pdx257: Update WFD system blobs from CPH2747_11_C_OTA_1020_all_6yqNTQ_01000100
-
-# device/sony/sm6375-common
-repopickchain 493329 # sm6375-common: Use legacy libion implementation
-
 # external/avb
-repopickchain 491140 # DNM Revert "Add ANDROID_SECURE_STORAGE_CMD support in RSAPublicKey()"
+repopickchain 490570 # avbtool: Add retry to generate_fec_data()
 
 # external/dng_sdk
 repopickchain 490572 # dng_area_task: Provide backwards compatibility with legacy blobs
@@ -108,9 +102,6 @@ repopickchain 492976 # libradiocompat: Fix non-null argument error by passing em
 # hardware/libhardware
 repopickchain 490712 # libhardware: Add new display types.
 
-# hardware/sony
-repopickchain 492602 # sepolicy: Rename 202404 compatibility mapping to 202504
-
 # hardware/qcom-caf/sm8450-6.6/audio/primary-hal
 repopick 493305 # audio: primary-hal: Add support for acnMask
 
@@ -124,7 +115,7 @@ repopickchain 492179 # sdk: Default to showing fastbootd in reboot menu
 repopickchain 490738 # DocumentsUI: add icons for shortcuts
 
 # packages/apps/EmergencyInfo
-repopickchain 490740 # EmergencyInfo: Apply insets
+repopick 490740 # EmergencyInfo: Apply insets
 
 # packages/apps/Launcher3
 repopickchain 493818 # Launcher3: Kill OSE widget
@@ -190,7 +181,7 @@ repopick 490903 # Handle key parameter conversion for FBE_ICE tag
 repopickchain 490921 # Add property to set secondary display orientation
 
 # system/update_engine
-repopickchain 490934 # Use ro.build.type in HardwareAndroid::AllowDowngrade()
+repopickchain 494342 # update_engine: Map vABC partitions even in recovery
 
 # system/vold
 repopickchain 490949 # vold: Add support for ISO9660/UDF CD-ROM
@@ -199,9 +190,9 @@ repopickchain 490949 # vold: Add support for ISO9660/UDF CD-ROM
 repopickchain 493316 # lineage: Update path to rust toolchains
 
 # vendor/qcom/opensource/audio-hal/st-hal-ar
-repopickchain 493134 # Revert "st-hal: add support for forceRecognitionEvent"
+repopick 493134 # Revert "st-hal: add support for forceRecognitionEvent"
 
 # vendor/qcom/opensource/interfaces
-repopickchain 493139 # Drop vendor.qti.hardware.qacs.ambientdatacapture
+repopick 493139 # Drop vendor.qti.hardware.qacs.ambientdatacapture
 
 wait

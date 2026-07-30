@@ -174,4 +174,8 @@ repopick 493134 # Revert "st-hal: add support for forceRecognitionEvent"
 # vendor/qcom/opensource/interfaces
 repopick 494767 # interfaces: Hide ambientdatacapture behind soong namespace
 
+# vendor_qcom_opensource_vibrator
+repopick 494098 # vibratorOL: allow magnitude to be set lower than LIGHT_AMPLITUDE
+repopick 494218 # vibratorOL: automatically detect supported primitives
+
 wait

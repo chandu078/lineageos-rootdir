@@ -49,13 +49,10 @@ function rc() {
 repopick 490428 # libc: libstdc++: Introduce libstdc++_vendor
 
 # build/make
-repopickchain 493887 # releasetools: skip disable_ublk on non-dynamic devices
+repopickchain 491482 # Revert "Add message suggesting SOONG_INCREMENTAL_ANALYSIS=true after builds"
 
 # device/google/gs-common
 repopick 491863 # sepolicy: Update ignored sepolicy for CP2A
-
-# external/avb
-repopickchain 490570 # avbtool: Add retry to generate_fec_data()
 
 # external/dng_sdk
 repopickchain 490572 # dng_area_task: Provide backwards compatibility with legacy blobs
@@ -163,13 +160,13 @@ repopick 490903 # Handle key parameter conversion for FBE_ICE tag
 repopickchain 490921 # Add property to set secondary display orientation
 
 # system/update_engine
-repopickchain 494342 # update_engine: Map vABC partitions even in recovery
+repopickchain 490934 # Use ro.build.type in HardwareAndroid::AllowDowngrade()
 
 # system/vold
 repopickchain 490949 # vold: Add support for ISO9660/UDF CD-ROM
 
 # vendor/lineage
-repopickchain 494283 # Revert "kernel: Rip out GCC support"
+repopickchain 493909 # build: Drop build-manifest.xml generation
 
 # vendor/qcom/opensource/audio-hal/st-hal-ar
 repopick 493134 # Revert "st-hal: add support for forceRecognitionEvent"
